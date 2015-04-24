@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<synonyms>
+  <group>
+    <syn>fast</syn>
+    <syn>quick</syn>
+    <syn>rapid</syn>
+  </group>
+
+  <group>
+    <syn>slow</syn>
+    <syn>decrease</syn>
+  </group>
+
+  <group>
+    <syn>google</syn>
+    <syn>search</syn>
+  </group>
+
+  <group>
+    <syn>check</syn>
+    <syn>lookup</syn>
+    <syn>look</syn>
+  </group>
+  
+</synonyms>

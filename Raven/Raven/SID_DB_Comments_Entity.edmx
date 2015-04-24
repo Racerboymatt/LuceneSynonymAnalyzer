@@ -1,0 +1,596 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SID_DBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="SID_DBModelStoreContainer">
+          <EntitySet Name="sidLikertResponses153" EntityType="SID_DBModel.Store.sidLikertResponses153" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="sidOrgLevels" EntityType="SID_DBModel.Store.sidOrgLevels" store:Type="Tables" store:Schema="dbo" store:Name="sidOrgLevels">
+            <DefiningQuery>SELECT 
+      [sidOrgLevels].[tsKey] AS [tsKey], 
+      [sidOrgLevels].[orgKey] AS [orgKey], 
+      [sidOrgLevels].[orgName] AS [orgName], 
+      [sidOrgLevels].[orgLevel] AS [orgLevel], 
+      [sidOrgLevels].[l12Key] AS [l12Key], 
+      [sidOrgLevels].[l12Name] AS [l12Name], 
+      [sidOrgLevels].[l11Key] AS [l11Key], 
+      [sidOrgLevels].[l11Name] AS [l11Name], 
+      [sidOrgLevels].[l10Key] AS [l10Key], 
+      [sidOrgLevels].[l10Name] AS [l10Name], 
+      [sidOrgLevels].[l9Key] AS [l9Key], 
+      [sidOrgLevels].[l9Name] AS [l9Name], 
+      [sidOrgLevels].[l8Key] AS [l8Key], 
+      [sidOrgLevels].[l8Name] AS [l8Name], 
+      [sidOrgLevels].[l7Key] AS [l7Key], 
+      [sidOrgLevels].[l7Name] AS [l7Name], 
+      [sidOrgLevels].[l6Key] AS [l6Key], 
+      [sidOrgLevels].[l6Name] AS [l6Name], 
+      [sidOrgLevels].[l5Key] AS [l5Key], 
+      [sidOrgLevels].[l5Name] AS [l5Name], 
+      [sidOrgLevels].[l4Key] AS [l4Key], 
+      [sidOrgLevels].[l4Name] AS [l4Name], 
+      [sidOrgLevels].[l3Key] AS [l3Key], 
+      [sidOrgLevels].[l3Name] AS [l3Name], 
+      [sidOrgLevels].[l2Key] AS [l2Key], 
+      [sidOrgLevels].[l2Name] AS [l2Name]
+      FROM [dbo].[sidOrgLevels] AS [sidOrgLevels]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="sidSurveydata" EntityType="SID_DBModel.Store.sidSurveydata" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="sidCasesView" EntityType="SID_DBModel.Store.sidCasesView" store:Type="Views" store:Schema="dbo" store:Name="sidCasesView">
+            <DefiningQuery>SELECT 
+      [sidCasesView].[csKey] AS [csKey], 
+      [sidCasesView].[adKey] AS [adKey], 
+      [sidCasesView].[suKey] AS [suKey], 
+      [sidCasesView].[tsKey] AS [tsKey], 
+      [sidCasesView].[orgKey] AS [orgKey], 
+      [sidCasesView].[adReqLoc] AS [adReqLoc], 
+      [sidCasesView].[orgAbbrev] AS [orgAbbrev], 
+      [sidCasesView].[csGroupDescr] AS [csGroupDescr], 
+      [sidCasesView].[suName] AS [suName], 
+      [sidCasesView].[csSurveyID] AS [csSurveyID], 
+      [sidCasesView].[csCase] AS [csCase], 
+      [sidCasesView].[adProcDate] AS [adProcDate], 
+      [sidCasesView].[adProcessor] AS [adProcessor], 
+      [sidCasesView].[csDebriefDate] AS [csDebriefDate], 
+      [sidCasesView].[csDebriefor] AS [csDebriefor]
+      FROM [dbo].[sidCasesView] AS [sidCasesView]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="sidCommentsView" EntityType="SID_DBModel.Store.sidCommentsView" store:Type="Views" store:Schema="dbo" store:Name="sidCommentsView">
+            <DefiningQuery>SELECT 
+      [sidCommentsView].[frKey] AS [frKey], 
+      [sidCommentsView].[sdKey] AS [sdKey], 
+      [sidCommentsView].[sdDate] AS [sdDate], 
+      [sidCommentsView].[ibkey] AS [ibkey], 
+      [sidCommentsView].[surveyItem] AS [surveyItem], 
+      [sidCommentsView].[comment] AS [comment], 
+      [sidCommentsView].[frExpose] AS [frExpose], 
+      [sidCommentsView].[frEmphasize] AS [frEmphasize], 
+      [sidCommentsView].[frReviewDate] AS [frReviewDate], 
+      [sidCommentsView].[frReviewer] AS [frReviewer], 
+      [sidCommentsView].[frWarningEmailSent] AS [frWarningEmailSent]
+      FROM [dbo].[sidCommentsView] AS [sidCommentsView]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="sidExplicits" EntityType="SID_DBModel.Store.sidExplicits" store:Type="Views" store:Schema="dbo" store:Name="sidExplicits">
+            <DefiningQuery>SELECT 
+      [sidExplicits].[edKey] AS [edKey], 
+      [sidExplicits].[sdKey] AS [sdKey], 
+      [sidExplicits].[suKey] AS [suKey], 
+      [sidExplicits].[siConstraint] AS [siConstraint], 
+      [sidExplicits].[ibKey] AS [ibKey], 
+      [sidExplicits].[dbKey] AS [dbKey], 
+      [sidExplicits].[dbValue] AS [dbValue], 
+      [sidExplicits].[dbText] AS [dbText], 
+      [sidExplicits].[dbCode] AS [dbCode], 
+      [sidExplicits].[dbSeq] AS [dbSeq], 
+      [sidExplicits].[explicitNum] AS [explicitNum]
+      FROM [dbo].[sidExplicits] AS [sidExplicits]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="sidImplicits" EntityType="SID_DBModel.Store.sidImplicits" store:Type="Views" store:Schema="dbo" store:Name="sidImplicits">
+            <DefiningQuery>SELECT 
+      [sidImplicits].[idKey] AS [idKey], 
+      [sidImplicits].[csKey] AS [csKey], 
+      [sidImplicits].[suKey] AS [suKey], 
+      [sidImplicits].[dbKey] AS [dbKey], 
+      [sidImplicits].[dbValue] AS [dbValue], 
+      [sidImplicits].[implicitNum] AS [implicitNum]
+      FROM [dbo].[sidImplicits] AS [sidImplicits]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <EntityType Name="sidLikertResponses153">
+          <Key>
+            <PropertyRef Name="lrKey" />
+          </Key>
+          <Property Name="lrKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="lrSdKey" Type="int" Nullable="false" />
+          <Property Name="lrItemnr" Type="int" />
+          <Property Name="lrIbKey" Type="int" Nullable="false" />
+          <Property Name="lrValue" Type="decimal" Nullable="false" Precision="5" Scale="2" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'SID_DB.dbo.sidOrgLevels' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="sidOrgLevels">
+          <Key>
+            <PropertyRef Name="tsKey" />
+            <PropertyRef Name="orgKey" />
+            <PropertyRef Name="orgName" />
+            <PropertyRef Name="orgLevel" />
+          </Key>
+          <Property Name="tsKey" Type="int" Nullable="false" />
+          <Property Name="orgKey" Type="int" Nullable="false" />
+          <Property Name="orgName" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="orgLevel" Type="int" Nullable="false" />
+          <Property Name="l12Key" Type="int" />
+          <Property Name="l12Name" Type="varchar" MaxLength="100" />
+          <Property Name="l11Key" Type="int" />
+          <Property Name="l11Name" Type="varchar" MaxLength="100" />
+          <Property Name="l10Key" Type="int" />
+          <Property Name="l10Name" Type="varchar" MaxLength="100" />
+          <Property Name="l9Key" Type="int" />
+          <Property Name="l9Name" Type="varchar" MaxLength="100" />
+          <Property Name="l8Key" Type="int" />
+          <Property Name="l8Name" Type="varchar" MaxLength="100" />
+          <Property Name="l7Key" Type="int" />
+          <Property Name="l7Name" Type="varchar" MaxLength="100" />
+          <Property Name="l6Key" Type="int" />
+          <Property Name="l6Name" Type="varchar" MaxLength="100" />
+          <Property Name="l5Key" Type="int" />
+          <Property Name="l5Name" Type="varchar" MaxLength="100" />
+          <Property Name="l4Key" Type="int" />
+          <Property Name="l4Name" Type="varchar" MaxLength="100" />
+          <Property Name="l3Key" Type="int" />
+          <Property Name="l3Name" Type="varchar" MaxLength="100" />
+          <Property Name="l2Key" Type="int" />
+          <Property Name="l2Name" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="sidSurveydata">
+          <Key>
+            <PropertyRef Name="sdKey" />
+          </Key>
+          <Property Name="sdKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="sdID" Type="int" Nullable="false" />
+          <Property Name="csKey" Type="int" Nullable="false" />
+          <Property Name="sdLogin" Type="int" Nullable="false" />
+          <Property Name="sdsuKey" Type="int" Nullable="false" />
+          <Property Name="sdIP" Type="varchar" MaxLength="32" />
+          <Property Name="sdBrowser" Type="varchar" MaxLength="50" />
+          <Property Name="sdElapsed" Type="int" Nullable="false" />
+          <Property Name="sdDate" Type="datetime" Nullable="false" />
+          <Property Name="sdSubmitBtn" Type="bit" Nullable="false" />
+          <Property Name="le1" Type="int" />
+          <Property Name="le2" Type="int" />
+          <Property Name="le3" Type="int" />
+          <Property Name="le4" Type="int" />
+          <Property Name="le5" Type="int" />
+          <Property Name="le6" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'SID_DB.dbo.sidCasesView' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="sidCasesView">
+          <Key>
+            <PropertyRef Name="csKey" />
+            <PropertyRef Name="suKey" />
+            <PropertyRef Name="tsKey" />
+            <PropertyRef Name="orgKey" />
+            <PropertyRef Name="adReqLoc" />
+            <PropertyRef Name="orgAbbrev" />
+            <PropertyRef Name="suName" />
+            <PropertyRef Name="csSurveyID" />
+            <PropertyRef Name="csCase" />
+          </Key>
+          <Property Name="csKey" Type="int" Nullable="false" />
+          <Property Name="adKey" Type="int" />
+          <Property Name="suKey" Type="int" Nullable="false" />
+          <Property Name="tsKey" Type="int" Nullable="false" />
+          <Property Name="orgKey" Type="int" Nullable="false" />
+          <Property Name="adReqLoc" Type="int" Nullable="false" />
+          <Property Name="orgAbbrev" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="csGroupDescr" Type="nvarchar" MaxLength="100" />
+          <Property Name="suName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="csSurveyID" Type="int" Nullable="false" />
+          <Property Name="csCase" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="adProcDate" Type="smalldatetime" />
+          <Property Name="adProcessor" Type="int" />
+          <Property Name="csDebriefDate" Type="datetime" />
+          <Property Name="csDebriefor" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'SID_DB.dbo.sidCommentsView' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="sidCommentsView">
+          <Key>
+            <PropertyRef Name="frKey" />
+            <PropertyRef Name="sdKey" />
+            <PropertyRef Name="sdDate" />
+            <PropertyRef Name="ibkey" />
+            <PropertyRef Name="surveyItem" />
+            <PropertyRef Name="frExpose" />
+            <PropertyRef Name="frEmphasize" />
+            <PropertyRef Name="frWarningEmailSent" />
+          </Key>
+          <Property Name="frKey" Type="int" Nullable="false" />
+          <Property Name="sdKey" Type="int" Nullable="false" />
+          <Property Name="sdDate" Type="datetime" Nullable="false" />
+          <Property Name="ibkey" Type="int" Nullable="false" />
+          <Property Name="surveyItem" Type="varchar" Nullable="false" MaxLength="4096" />
+          <Property Name="comment" Type="varchar" />
+          <Property Name="frExpose" Type="bit" Nullable="false" />
+          <Property Name="frEmphasize" Type="bit" Nullable="false" />
+          <Property Name="frReviewDate" Type="smalldatetime" />
+          <Property Name="frReviewer" Type="int" />
+          <Property Name="frWarningEmailSent" Type="bit" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'SID_DB.dbo.sidExplicits' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="sidExplicits">
+          <Key>
+            <PropertyRef Name="edKey" />
+            <PropertyRef Name="sdKey" />
+            <PropertyRef Name="suKey" />
+            <PropertyRef Name="ibKey" />
+            <PropertyRef Name="dbKey" />
+            <PropertyRef Name="dbValue" />
+            <PropertyRef Name="dbText" />
+            <PropertyRef Name="dbSeq" />
+            <PropertyRef Name="explicitNum" />
+          </Key>
+          <Property Name="edKey" Type="int" Nullable="false" />
+          <Property Name="sdKey" Type="int" Nullable="false" />
+          <Property Name="suKey" Type="int" Nullable="false" />
+          <Property Name="siConstraint" Type="nvarchar" MaxLength="200" />
+          <Property Name="ibKey" Type="int" Nullable="false" />
+          <Property Name="dbKey" Type="int" Nullable="false" />
+          <Property Name="dbValue" Type="varchar" Nullable="false" MaxLength="128" />
+          <Property Name="dbText" Type="varchar" Nullable="false" MaxLength="256" />
+          <Property Name="dbCode" Type="varchar" MaxLength="128" />
+          <Property Name="dbSeq" Type="int" Nullable="false" />
+          <Property Name="explicitNum" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'SID_DB.dbo.sidImplicits' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="sidImplicits">
+          <Key>
+            <PropertyRef Name="idKey" />
+            <PropertyRef Name="csKey" />
+            <PropertyRef Name="dbKey" />
+          </Key>
+          <Property Name="idKey" Type="int" Nullable="false" />
+          <Property Name="csKey" Type="int" Nullable="false" />
+          <Property Name="suKey" Type="int" />
+          <Property Name="dbKey" Type="int" Nullable="false" />
+          <Property Name="dbValue" Type="varchar" MaxLength="128" />
+          <Property Name="implicitNum" Type="int" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SID_DBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="SID_DBEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="sidLikertResponses153" EntityType="SID_DBModel.sidLikertResponses153" />
+          <EntitySet Name="sidOrgLevels" EntityType="SID_DBModel.sidOrgLevel" />
+          <EntitySet Name="sidSurveydatas" EntityType="SID_DBModel.sidSurveydata" />
+          <EntitySet Name="sidCasesViews" EntityType="SID_DBModel.sidCasesView" />
+          <EntitySet Name="sidCommentsViews" EntityType="SID_DBModel.sidCommentsView" />
+          <EntitySet Name="sidExplicits" EntityType="SID_DBModel.sidExplicit" />
+          <EntitySet Name="sidImplicits" EntityType="SID_DBModel.sidImplicit" />
+        </EntityContainer>
+        <EntityType Name="sidLikertResponses153">
+          <Key>
+            <PropertyRef Name="lrKey" />
+          </Key>
+          <Property Name="lrKey" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="lrSdKey" Type="Int32" Nullable="false" />
+          <Property Name="lrItemnr" Type="Int32" />
+          <Property Name="lrIbKey" Type="Int32" Nullable="false" />
+          <Property Name="lrValue" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+        </EntityType>
+        <EntityType Name="sidOrgLevel">
+          <Key>
+            <PropertyRef Name="tsKey" />
+            <PropertyRef Name="orgKey" />
+            <PropertyRef Name="orgName" />
+            <PropertyRef Name="orgLevel" />
+          </Key>
+          <Property Name="tsKey" Type="Int32" Nullable="false" />
+          <Property Name="orgKey" Type="Int32" Nullable="false" />
+          <Property Name="orgName" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="orgLevel" Type="Int32" Nullable="false" />
+          <Property Name="l12Key" Type="Int32" />
+          <Property Name="l12Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="l11Key" Type="Int32" />
+          <Property Name="l11Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="l10Key" Type="Int32" />
+          <Property Name="l10Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="l9Key" Type="Int32" />
+          <Property Name="l9Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="l8Key" Type="Int32" />
+          <Property Name="l8Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="l7Key" Type="Int32" />
+          <Property Name="l7Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="l6Key" Type="Int32" />
+          <Property Name="l6Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="l5Key" Type="Int32" />
+          <Property Name="l5Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="l4Key" Type="Int32" />
+          <Property Name="l4Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="l3Key" Type="Int32" />
+          <Property Name="l3Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="l2Key" Type="Int32" />
+          <Property Name="l2Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="sidSurveydata">
+          <Key>
+            <PropertyRef Name="sdKey" />
+          </Key>
+          <Property Name="sdKey" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="sdID" Type="Int32" Nullable="false" />
+          <Property Name="csKey" Type="Int32" Nullable="false" />
+          <Property Name="sdLogin" Type="Int32" Nullable="false" />
+          <Property Name="sdsuKey" Type="Int32" Nullable="false" />
+          <Property Name="sdIP" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+          <Property Name="sdBrowser" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="sdElapsed" Type="Int32" Nullable="false" />
+          <Property Name="sdDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="sdSubmitBtn" Type="Boolean" Nullable="false" />
+          <Property Name="le1" Type="Int32" />
+          <Property Name="le2" Type="Int32" />
+          <Property Name="le3" Type="Int32" />
+          <Property Name="le4" Type="Int32" />
+          <Property Name="le5" Type="Int32" />
+          <Property Name="le6" Type="Int32" />
+        </EntityType>
+        <EntityType Name="sidCasesView">
+          <Key>
+            <PropertyRef Name="csKey" />
+            <PropertyRef Name="suKey" />
+            <PropertyRef Name="tsKey" />
+            <PropertyRef Name="orgKey" />
+            <PropertyRef Name="adReqLoc" />
+            <PropertyRef Name="orgAbbrev" />
+            <PropertyRef Name="suName" />
+            <PropertyRef Name="csSurveyID" />
+            <PropertyRef Name="csCase" />
+          </Key>
+          <Property Name="csKey" Type="Int32" Nullable="false" />
+          <Property Name="adKey" Type="Int32" />
+          <Property Name="suKey" Type="Int32" Nullable="false" />
+          <Property Name="tsKey" Type="Int32" Nullable="false" />
+          <Property Name="orgKey" Type="Int32" Nullable="false" />
+          <Property Name="adReqLoc" Type="Int32" Nullable="false" />
+          <Property Name="orgAbbrev" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="csGroupDescr" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="suName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="csSurveyID" Type="Int32" Nullable="false" />
+          <Property Name="csCase" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="adProcDate" Type="DateTime" Precision="0" />
+          <Property Name="adProcessor" Type="Int32" />
+          <Property Name="csDebriefDate" Type="DateTime" Precision="3" />
+          <Property Name="csDebriefor" Type="Int32" />
+        </EntityType>
+        <EntityType Name="sidCommentsView">
+          <Key>
+            <PropertyRef Name="frKey" />
+            <PropertyRef Name="sdKey" />
+            <PropertyRef Name="sdDate" />
+            <PropertyRef Name="ibkey" />
+            <PropertyRef Name="surveyItem" />
+            <PropertyRef Name="frExpose" />
+            <PropertyRef Name="frEmphasize" />
+            <PropertyRef Name="frWarningEmailSent" />
+          </Key>
+          <Property Name="frKey" Type="Int32" Nullable="false" />
+          <Property Name="sdKey" Type="Int32" Nullable="false" />
+          <Property Name="sdDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ibkey" Type="Int32" Nullable="false" />
+          <Property Name="surveyItem" Type="String" Nullable="false" MaxLength="4096" Unicode="false" FixedLength="false" />
+          <Property Name="comment" Type="String" MaxLength="8000" Unicode="false" FixedLength="false" />
+          <Property Name="frExpose" Type="Boolean" Nullable="false" />
+          <Property Name="frEmphasize" Type="Boolean" Nullable="false" />
+          <Property Name="frReviewDate" Type="DateTime" Precision="0" />
+          <Property Name="frReviewer" Type="Int32" />
+          <Property Name="frWarningEmailSent" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sidExplicit">
+          <Key>
+            <PropertyRef Name="edKey" />
+            <PropertyRef Name="sdKey" />
+            <PropertyRef Name="suKey" />
+            <PropertyRef Name="ibKey" />
+            <PropertyRef Name="dbKey" />
+            <PropertyRef Name="dbValue" />
+            <PropertyRef Name="dbText" />
+            <PropertyRef Name="dbSeq" />
+            <PropertyRef Name="explicitNum" />
+          </Key>
+          <Property Name="edKey" Type="Int32" Nullable="false" />
+          <Property Name="sdKey" Type="Int32" Nullable="false" />
+          <Property Name="suKey" Type="Int32" Nullable="false" />
+          <Property Name="siConstraint" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ibKey" Type="Int32" Nullable="false" />
+          <Property Name="dbKey" Type="Int32" Nullable="false" />
+          <Property Name="dbValue" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+          <Property Name="dbText" Type="String" Nullable="false" MaxLength="256" Unicode="false" FixedLength="false" />
+          <Property Name="dbCode" Type="String" MaxLength="128" Unicode="false" FixedLength="false" />
+          <Property Name="dbSeq" Type="Int32" Nullable="false" />
+          <Property Name="explicitNum" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sidImplicit">
+          <Key>
+            <PropertyRef Name="idKey" />
+            <PropertyRef Name="csKey" />
+            <PropertyRef Name="dbKey" />
+          </Key>
+          <Property Name="idKey" Type="Int32" Nullable="false" />
+          <Property Name="csKey" Type="Int32" Nullable="false" />
+          <Property Name="suKey" Type="Int32" />
+          <Property Name="dbKey" Type="Int32" Nullable="false" />
+          <Property Name="dbValue" Type="String" MaxLength="128" Unicode="false" FixedLength="false" />
+          <Property Name="implicitNum" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SID_DBModelStoreContainer" CdmEntityContainer="SID_DBEntities">
+          <EntitySetMapping Name="sidLikertResponses153">
+            <EntityTypeMapping TypeName="SID_DBModel.sidLikertResponses153">
+              <MappingFragment StoreEntitySet="sidLikertResponses153">
+                <ScalarProperty Name="lrKey" ColumnName="lrKey" />
+                <ScalarProperty Name="lrSdKey" ColumnName="lrSdKey" />
+                <ScalarProperty Name="lrItemnr" ColumnName="lrItemnr" />
+                <ScalarProperty Name="lrIbKey" ColumnName="lrIbKey" />
+                <ScalarProperty Name="lrValue" ColumnName="lrValue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sidOrgLevels">
+            <EntityTypeMapping TypeName="SID_DBModel.sidOrgLevel">
+              <MappingFragment StoreEntitySet="sidOrgLevels">
+                <ScalarProperty Name="tsKey" ColumnName="tsKey" />
+                <ScalarProperty Name="orgKey" ColumnName="orgKey" />
+                <ScalarProperty Name="orgName" ColumnName="orgName" />
+                <ScalarProperty Name="orgLevel" ColumnName="orgLevel" />
+                <ScalarProperty Name="l12Key" ColumnName="l12Key" />
+                <ScalarProperty Name="l12Name" ColumnName="l12Name" />
+                <ScalarProperty Name="l11Key" ColumnName="l11Key" />
+                <ScalarProperty Name="l11Name" ColumnName="l11Name" />
+                <ScalarProperty Name="l10Key" ColumnName="l10Key" />
+                <ScalarProperty Name="l10Name" ColumnName="l10Name" />
+                <ScalarProperty Name="l9Key" ColumnName="l9Key" />
+                <ScalarProperty Name="l9Name" ColumnName="l9Name" />
+                <ScalarProperty Name="l8Key" ColumnName="l8Key" />
+                <ScalarProperty Name="l8Name" ColumnName="l8Name" />
+                <ScalarProperty Name="l7Key" ColumnName="l7Key" />
+                <ScalarProperty Name="l7Name" ColumnName="l7Name" />
+                <ScalarProperty Name="l6Key" ColumnName="l6Key" />
+                <ScalarProperty Name="l6Name" ColumnName="l6Name" />
+                <ScalarProperty Name="l5Key" ColumnName="l5Key" />
+                <ScalarProperty Name="l5Name" ColumnName="l5Name" />
+                <ScalarProperty Name="l4Key" ColumnName="l4Key" />
+                <ScalarProperty Name="l4Name" ColumnName="l4Name" />
+                <ScalarProperty Name="l3Key" ColumnName="l3Key" />
+                <ScalarProperty Name="l3Name" ColumnName="l3Name" />
+                <ScalarProperty Name="l2Key" ColumnName="l2Key" />
+                <ScalarProperty Name="l2Name" ColumnName="l2Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sidSurveydatas">
+            <EntityTypeMapping TypeName="SID_DBModel.sidSurveydata">
+              <MappingFragment StoreEntitySet="sidSurveydata">
+                <ScalarProperty Name="sdKey" ColumnName="sdKey" />
+                <ScalarProperty Name="sdID" ColumnName="sdID" />
+                <ScalarProperty Name="csKey" ColumnName="csKey" />
+                <ScalarProperty Name="sdLogin" ColumnName="sdLogin" />
+                <ScalarProperty Name="sdsuKey" ColumnName="sdsuKey" />
+                <ScalarProperty Name="sdIP" ColumnName="sdIP" />
+                <ScalarProperty Name="sdBrowser" ColumnName="sdBrowser" />
+                <ScalarProperty Name="sdElapsed" ColumnName="sdElapsed" />
+                <ScalarProperty Name="sdDate" ColumnName="sdDate" />
+                <ScalarProperty Name="sdSubmitBtn" ColumnName="sdSubmitBtn" />
+                <ScalarProperty Name="le1" ColumnName="le1" />
+                <ScalarProperty Name="le2" ColumnName="le2" />
+                <ScalarProperty Name="le3" ColumnName="le3" />
+                <ScalarProperty Name="le4" ColumnName="le4" />
+                <ScalarProperty Name="le5" ColumnName="le5" />
+                <ScalarProperty Name="le6" ColumnName="le6" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sidCasesViews">
+            <EntityTypeMapping TypeName="SID_DBModel.sidCasesView">
+              <MappingFragment StoreEntitySet="sidCasesView">
+                <ScalarProperty Name="csKey" ColumnName="csKey" />
+                <ScalarProperty Name="adKey" ColumnName="adKey" />
+                <ScalarProperty Name="suKey" ColumnName="suKey" />
+                <ScalarProperty Name="tsKey" ColumnName="tsKey" />
+                <ScalarProperty Name="orgKey" ColumnName="orgKey" />
+                <ScalarProperty Name="adReqLoc" ColumnName="adReqLoc" />
+                <ScalarProperty Name="orgAbbrev" ColumnName="orgAbbrev" />
+                <ScalarProperty Name="csGroupDescr" ColumnName="csGroupDescr" />
+                <ScalarProperty Name="suName" ColumnName="suName" />
+                <ScalarProperty Name="csSurveyID" ColumnName="csSurveyID" />
+                <ScalarProperty Name="csCase" ColumnName="csCase" />
+                <ScalarProperty Name="adProcDate" ColumnName="adProcDate" />
+                <ScalarProperty Name="adProcessor" ColumnName="adProcessor" />
+                <ScalarProperty Name="csDebriefDate" ColumnName="csDebriefDate" />
+                <ScalarProperty Name="csDebriefor" ColumnName="csDebriefor" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sidCommentsViews">
+            <EntityTypeMapping TypeName="SID_DBModel.sidCommentsView">
+              <MappingFragment StoreEntitySet="sidCommentsView">
+                <ScalarProperty Name="frKey" ColumnName="frKey" />
+                <ScalarProperty Name="sdKey" ColumnName="sdKey" />
+                <ScalarProperty Name="sdDate" ColumnName="sdDate" />
+                <ScalarProperty Name="ibkey" ColumnName="ibkey" />
+                <ScalarProperty Name="surveyItem" ColumnName="surveyItem" />
+                <ScalarProperty Name="comment" ColumnName="comment" />
+                <ScalarProperty Name="frExpose" ColumnName="frExpose" />
+                <ScalarProperty Name="frEmphasize" ColumnName="frEmphasize" />
+                <ScalarProperty Name="frReviewDate" ColumnName="frReviewDate" />
+                <ScalarProperty Name="frReviewer" ColumnName="frReviewer" />
+                <ScalarProperty Name="frWarningEmailSent" ColumnName="frWarningEmailSent" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sidExplicits">
+            <EntityTypeMapping TypeName="SID_DBModel.sidExplicit">
+              <MappingFragment StoreEntitySet="sidExplicits">
+                <ScalarProperty Name="edKey" ColumnName="edKey" />
+                <ScalarProperty Name="sdKey" ColumnName="sdKey" />
+                <ScalarProperty Name="suKey" ColumnName="suKey" />
+                <ScalarProperty Name="siConstraint" ColumnName="siConstraint" />
+                <ScalarProperty Name="ibKey" ColumnName="ibKey" />
+                <ScalarProperty Name="dbKey" ColumnName="dbKey" />
+                <ScalarProperty Name="dbValue" ColumnName="dbValue" />
+                <ScalarProperty Name="dbText" ColumnName="dbText" />
+                <ScalarProperty Name="dbCode" ColumnName="dbCode" />
+                <ScalarProperty Name="dbSeq" ColumnName="dbSeq" />
+                <ScalarProperty Name="explicitNum" ColumnName="explicitNum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sidImplicits">
+            <EntityTypeMapping TypeName="SID_DBModel.sidImplicit">
+              <MappingFragment StoreEntitySet="sidImplicits">
+                <ScalarProperty Name="idKey" ColumnName="idKey" />
+                <ScalarProperty Name="csKey" ColumnName="csKey" />
+                <ScalarProperty Name="suKey" ColumnName="suKey" />
+                <ScalarProperty Name="dbKey" ColumnName="dbKey" />
+                <ScalarProperty Name="dbValue" ColumnName="dbValue" />
+                <ScalarProperty Name="implicitNum" ColumnName="implicitNum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

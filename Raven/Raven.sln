@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raven", "Raven\Raven.csproj", "{C88B05DF-E528-4D8E-AF80-5D7D4CEF320B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{5AD9BBC8-B3E1-45E3-8330-EBB188D4B308}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RavenTests", "RavenTests\RavenTests.csproj", "{DDEB3815-DE02-4A63-9398-BD423DC33F65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RavenAnalyzer", "RavenAnalyzer\RavenAnalyzer.csproj", "{9431FB95-0835-42E6-A7FD-383CBB73AAAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucene.Net.SynonymEngine", "Lucene.Net.SynonymEngine\Lucene.Net.SynonymEngine.csproj", "{D8F186FD-5ED0-41B9-BD58-6EAA9E0B26E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyzerViewer", "AnalyzerViewer\AnalyzerViewer.csproj", "{07254ABA-4D81-4A66-9C6C-C74A858452AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C88B05DF-E528-4D8E-AF80-5D7D4CEF320B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C88B05DF-E528-4D8E-AF80-5D7D4CEF320B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C88B05DF-E528-4D8E-AF80-5D7D4CEF320B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C88B05DF-E528-4D8E-AF80-5D7D4CEF320B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDEB3815-DE02-4A63-9398-BD423DC33F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDEB3815-DE02-4A63-9398-BD423DC33F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDEB3815-DE02-4A63-9398-BD423DC33F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDEB3815-DE02-4A63-9398-BD423DC33F65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9431FB95-0835-42E6-A7FD-383CBB73AAAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9431FB95-0835-42E6-A7FD-383CBB73AAAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9431FB95-0835-42E6-A7FD-383CBB73AAAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9431FB95-0835-42E6-A7FD-383CBB73AAAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8F186FD-5ED0-41B9-BD58-6EAA9E0B26E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8F186FD-5ED0-41B9-BD58-6EAA9E0B26E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8F186FD-5ED0-41B9-BD58-6EAA9E0B26E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8F186FD-5ED0-41B9-BD58-6EAA9E0B26E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07254ABA-4D81-4A66-9C6C-C74A858452AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07254ABA-4D81-4A66-9C6C-C74A858452AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07254ABA-4D81-4A66-9C6C-C74A858452AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07254ABA-4D81-4A66-9C6C-C74A858452AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
