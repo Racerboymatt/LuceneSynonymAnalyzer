@@ -1,0 +1,10 @@
+Raven/AnalyzerViewer/bin/
+Raven/AnalyzerViewer/obj/
+Raven/Lucene.Net.SynonymEngine/bin/
+Raven/Lucene.Net.SynonymEngine/obj/
+Raven/Raven/bin/
+Raven/Raven/obj/
+Raven/RavenAnalyzer/obj/
+*.suo
+*bin/
+*obj
