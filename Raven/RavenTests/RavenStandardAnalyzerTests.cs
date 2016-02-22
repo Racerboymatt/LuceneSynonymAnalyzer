@@ -7,6 +7,7 @@ using NUnit.Framework;
 using Raven;
 using Raven.Client;
 using Raven.Tests.Helpers;
+using TestCommentsStandandAnalyzerIndex = RavenTests.TestIndexes.TestCommentsStandandAnalyzerIndex;
 
 namespace RavenTests
 {

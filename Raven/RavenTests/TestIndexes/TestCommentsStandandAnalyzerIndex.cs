@@ -3,7 +3,7 @@ using Lucene.Net.Analysis;
 using Lucene.Net.Analysis.Standard;
 using Raven.Client.Indexes;
 
-namespace Raven
+namespace RavenTests.TestIndexes
 {
     public class TestCommentsStandandAnalyzerIndex : AbstractIndexCreationTask<TestComment, TestCommentsStandandAnalyzerIndex.ReduceResult>
     {

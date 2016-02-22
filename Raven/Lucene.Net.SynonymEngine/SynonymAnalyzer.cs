@@ -1,9 +1,11 @@
 ﻿using Lucene.Net.Analysis;
 using Lucene.Net.Analysis.Standard;
+using Raven.Database.Indexing;
 using Version = Lucene.Net.Util.Version;
 
 namespace Lucene.Net.SynonymEngine
 {
+    [NotForQuerying]
     public class SynonymAnalyzer : Analyzer
     {
         public ISynonymEngine SynonymEngine { get; private set; }

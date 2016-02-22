@@ -1,9 +1,10 @@
 ﻿using System.Linq;
 using Lucene.Net.Analysis;
+using Raven;
 using Raven.Client.Indexes;
 using RavenAnalyzer;
 
-namespace Raven
+namespace RavenTests.TestIndexes
 {
     public class TestCommentsEnglishSnowballAnalyzerIndex : AbstractIndexCreationTask<TestComment, TestCommentsEnglishSnowballAnalyzerIndex.ReduceResult>
     {

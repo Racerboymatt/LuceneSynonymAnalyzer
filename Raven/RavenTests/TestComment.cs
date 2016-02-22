@@ -1,4 +1,4 @@
-﻿namespace Raven
+﻿namespace RavenTests
 {
     public class TestComment
     {

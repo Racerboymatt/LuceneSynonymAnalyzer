@@ -3,7 +3,7 @@ using Lucene.Net.Analysis;
 using Lucene.Net.SynonymEngine;
 using Raven.Client.Indexes;
 
-namespace Raven
+namespace RavenTests.TestIndexes
 {
     public class TestCommentsSynonymAnalyzerIndex : AbstractIndexCreationTask<TestComment, TestCommentsSynonymAnalyzerIndex.ReduceResult>
     {

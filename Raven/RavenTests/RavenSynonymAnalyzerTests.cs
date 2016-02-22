@@ -3,9 +3,9 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using FluentAssertions;
 using NUnit.Framework;
-using Raven;
 using Raven.Client;
 using Raven.Tests.Helpers;
+using TestCommentsSynonymAnalyzerIndex = RavenTests.TestIndexes.TestCommentsSynonymAnalyzerIndex;
 
 namespace RavenTests
 {

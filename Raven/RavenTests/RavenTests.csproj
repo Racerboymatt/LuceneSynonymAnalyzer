@@ -119,6 +119,10 @@
     <Compile Include="RavenStandardAnalyzerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CanCallLastOnArray.cs" />
+    <Compile Include="TestComment.cs" />
+    <Compile Include="TestIndexes\TestCommentsEnglishSnowballAnalyzerIndex.cs" />
+    <Compile Include="TestIndexes\TestCommentsStandandAnalyzerIndex.cs" />
+    <Compile Include="TestIndexes\TestCommentsSynonymAnalyzerIndex.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -128,9 +132,9 @@
       <Project>{d8f186fd-5ed0-41b9-bd58-6eaa9e0b26e6}</Project>
       <Name>Lucene.Net.SynonymEngine</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Raven\Raven.csproj">
-      <Project>{c88b05df-e528-4d8e-af80-5d7d4cef320b}</Project>
-      <Name>Raven</Name>
+    <ProjectReference Include="..\RavenAnalyzer\RavenAnalyzer.csproj">
+      <Project>{9431fb95-0835-42e6-a7fd-383cbb73aaac}</Project>
+      <Name>RavenAnalyzer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
