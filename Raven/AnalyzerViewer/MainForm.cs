@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using Lucene.Net.Analysis;
 using Lucene.Net.Analysis.Standard;
 using System.IO;
+using Lucene.Net.Analysis.Snowball;
 using Version = Lucene.Net.Util.Version;
 
 namespace AnalyzerViewer
@@ -23,7 +24,7 @@ namespace AnalyzerViewer
             AnalyzerList.Add(new AnalyzerInfo("Simple Analyzer", "An Analyzer that filters LetterTokenizer with LowerCaseFilter.",  new SimpleAnalyzer()));
             AnalyzerList.Add(new AnalyzerInfo("Standard Analyzer", "Filters StandardTokenizer with StandardFilter, LowerCaseFilter and StopFilter, using a list of English stop words.",  new StandardAnalyzer(Version.LUCENE_30)));
             AnalyzerList.Add(new AnalyzerInfo("Synonym Analyzer", "A Custom Analyzer That Injects Synonyms into the analysis.", new Lucene.Net.SynonymEngine.SynonymAnalyzer()));
-            //AnalyzerList.Add(new AnalyzerInfo("SnowBallAnalyzer", "Snow Ball", new SnowballAnalyzer(Version.LUCENE_30, "English")));
+            AnalyzerList.Add(new AnalyzerInfo("SnowBallAnalyzer", "Snow Ball", new SnowballAnalyzer(Version.LUCENE_30, "English")));
 
             AnalyzerViews.Add(new TermAnalyzerView());
             AnalyzerViews.Add(new TermWithOffsetsView());
